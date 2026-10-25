@@ -5,6 +5,8 @@ Leandro Rivero - Legajo: 115685
 
 Juan Meloni - Legajo: 118686
 
+Franco Perrotta - Legajo: 113970
+
 ## Descripción:
 > El siguiente TP tiene como finalidad recrear un equipo de trabajo. </br>
 > Se encontrarán y deberán resolver los diferentes inconvenientes que surjan en el camino.
