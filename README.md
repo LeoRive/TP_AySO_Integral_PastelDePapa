@@ -1,4 +1,6 @@
-# UTN-FRA_SO_TP-Integral
+# TP_AySO_Integral_PastelDePapa
+Tiara Godoy Quiroga- Legajo xxxxx
+
 Leandro Rivero - Legajo: 115685
 
 Juan Meloni - Legajo: 118686
@@ -127,9 +129,3 @@ Juan Meloni - Legajo: 118686
     - Desarrolla Playbook de testing unitarios dentro de los Roles de Ansible.
     - Realizar un Script-Master.sh que ejecute todas las tares.
     - Realizar un check.sh que valide el correcto funcionamiento de todos los desarrollos.
-    
-=======
-Leandro Rivero - Legajo: 115685
-
-Juan Meloni - Legajo: 118686
->>>>>>> 3c3c4506e30fe3c2254f3cf590d72eaff27df7f3
