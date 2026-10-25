@@ -1,6 +1,8 @@
 # UTN-FRA_SO_TP-Integral
 Leandro Rivero - Legajo: 115685
 
+Juan Meloni - Legajo: 118686
+
 ## Descripción:
 > El siguiente TP tiene como finalidad recrear un equipo de trabajo. </br>
 > Se encontrarán y deberán resolver los diferentes inconvenientes que surjan en el camino.
@@ -126,3 +128,8 @@ Leandro Rivero - Legajo: 115685
     - Realizar un Script-Master.sh que ejecute todas las tares.
     - Realizar un check.sh que valide el correcto funcionamiento de todos los desarrollos.
     
+=======
+Leandro Rivero - Legajo: 115685
+
+Juan Meloni - Legajo: 118686
+>>>>>>> 3c3c4506e30fe3c2254f3cf590d72eaff27df7f3
