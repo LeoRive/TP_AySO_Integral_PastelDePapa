@@ -13,17 +13,10 @@ clear
 ###############################
 LISTA=$1
 
-LOG_FILE="Bash_script/check_url/status_URL.log"
+LOG_FILE="/var/log/status_url.log"
 
 ANT_IFS=$IFS
 IFS=$'\n'
-
-while read -r LINEA
-do
-     [[ "$LINEA" == \#* ]] && continue
-     DOMINIO=$(echo "$LINEA" | awk '{print $1}')
-     URL=$(echo "$LINEA" | awk '{print $2}')
-     [ -z "$URL" ] && continue
 
 #---- Dentro del bucle ----#
   # Obtener el código de estado HTTP
@@ -34,9 +27,7 @@ do
 
 
  # Registrar en el archivo /var/log/status_url.log
-  echo "$TIMESTAMP - Code:$STATUS_CODE - URL:$URL" | tee -a  "$LOG_FILE"
-  
-  done < "$LISTA"
+  echo "$TIMESTAMP - Code:$STATUS_CODE - URL:$URL" |sudo tee -a  "$LOG_FILE"
 
 
 
