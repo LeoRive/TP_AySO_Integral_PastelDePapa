@@ -5,4 +5,15 @@
    debug:
      msg: "Inicio de tareas dentro del Rol: TP_INI"
 
+ - name: "Crear carpeta destino"
+   file:
+     path: /tmp/Grupo
+     state: directory
+     owner: vagrant
+
+ - name: "Generar archivo desde plantilla"
+   template:
+     src: template_01.j2
+     dest: /tmp/Grupo/datos.txt
+     owner: vagrant
 
