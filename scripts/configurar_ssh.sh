@@ -30,12 +30,6 @@ touch /home/vagrant/.ssh/authorized_keys
 for CLAVE in /vagrant/ssh-keys/*.pub; do 
   [ -f "$CLAVE" ] || continue #Si el archivo no existe, no intentes utilizarlo y pasá al siguiente
 
-  case "$CLAVE" in
-    "/vagrant/ssh-keys/${HOSTNAME_VM}.pub")
-      continue
-      ;;
-  esac
-
   cat "$CLAVE" >> /home/vagrant/.ssh/authorized_keys #agregar al final de un archivo sin borrar lo que ya contiene
 done
 
