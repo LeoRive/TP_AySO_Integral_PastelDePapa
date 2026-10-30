@@ -14,7 +14,10 @@
 
     - include_role:
         name: Instala-tools_PastelDePapa
-    
+
+    - include_role:
+        name: Sudoers_PastelDePapa
+
     - name: "Otra tarea"
       debug:
         msg: "Despues de la ejecucion del rol"
