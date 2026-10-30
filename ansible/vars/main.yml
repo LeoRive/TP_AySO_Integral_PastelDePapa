@@ -1,4 +1,24 @@
 ---
 # Variables Globales:
 
-Nombre_Grupo: "Nombre-Grupo-Ejemplo"
+Nombre_Grupo: "PastelDePapa"
+Nombre_Division: "C313"
+Integrantes:
+  - rol: "R1"
+    nombre: "Leandro"
+    apellido: "Rivero"
+  - rol: "R2"
+    nombre: "Tiara"
+    apellido: "Godoy Quiroga"
+  - rol: "R3"
+    nombre: "Nazarena"
+    apellido: "Moreno"
+  - rol: "R4"
+    nombre: "Franco"
+    apellido: "Perrotta"
+  - rol: "R5"
+    nombre: "Juan"
+    apellido: "Meloni"
+  - rol: "R6"
+    nombre: "Manuel"
+    apellido: "Trombino Blanco"

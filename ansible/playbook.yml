@@ -11,7 +11,16 @@
   tasks:
     - include_role:
         name: TP_INI
-    
+
+    - include_role:
+        name: Instala-tools_PastelDePapa
+
+    - include_role:
+        name: Sudoers_PastelDePapa
+
+    - include_role:
+        name: Alta_Usuarios_PastelDePapa
+
     - name: "Otra tarea"
       debug:
         msg: "Despues de la ejecucion del rol"
