@@ -1,0 +1,36 @@
+#SPDX-License-Identifier: MIT-0
+---
+# tasks file for Alta_Usuarios_PastelDePapa
+
+- name: "Crear grupo principal por rol"
+  become: true
+  group:
+    name: "G_{{item.rol}}"
+    state: present
+  loop: "{{ Integrantes }}"
+
+- name: "Crear grupo secundario por rol"
+  become: true
+  group:
+    name: "{{Nombre_Grupo}}"
+    state: present
+
+- name: "Leer el hash de la clave del usuario vagrant"
+  become: true
+  getent:
+    database: shadow
+    key: vagrant
+  no_log: true
+
+- name: "Crear un usuario por integrante"
+  become: true
+  user:
+    name: "{{ item.rol }}_{{ item.nombre}}"
+    group: "G_{{ item.rol }}"
+    groups: "{{ Nombre_Grupo }}"
+    append: true
+    password: "{{ getent_shadow['vagrant'][0] }}"
+    update_password: on_create
+    shell: /bin/bash
+  loop: "{{ Integrantes }}"
+
