@@ -15,6 +15,7 @@ dnf install -y \
     tree \
     ca-certificates \
     python3 \
+    ansible-core \
     htop \
     tmux
 
