@@ -1,0 +1,11 @@
+#SPDX-License-Identifier: MIT-0
+---
+# tasks file for Sudoers_PastelDePapa
+
+- name: "otorga sudo sin contraseña"
+  become: true
+  copy:
+    content: "%{{Nombre_Grupo}} ALL=(ALL) NOPASSWD: ALL\n"
+    dest: /etc/sudoers.d/{{Nombre_Grupo}}
+    mode: "0440"
+    validate: "visudo -cf %s"

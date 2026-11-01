@@ -1,0 +1,7 @@
+#SPDX-License-Identifier: MIT-0
+---
+# vars file for Instala-tools_PastelDePapa
+Programas_a_instalar:
+  - htop
+  - tmux
+  - speedtest-cli

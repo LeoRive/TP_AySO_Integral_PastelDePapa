@@ -1,0 +1,9 @@
+#SPDX-License-Identifier: MIT-0
+---
+# tasks file for Instala-tools_PastelDePapa
+#
+- name: "Instalar programas"
+  become: true
+  package:
+    name: "{{Programas_a_instalar}}"
+    state: present

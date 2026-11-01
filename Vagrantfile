@@ -74,6 +74,16 @@ Vagrant.configure("2") do |config|
     fedora.vm.provision "shell",
       name: "configurar_ssh",
       path: "scripts/configurar_ssh.sh"
+	  
+# Ansible (se ejecuta a pedido, despues del cruce de claves)
+    fedora.vm.provision "correr_ansible", type: "ansible_local", run: "never" do |ansible|
+      ansible.playbook = "ansible/playbook.yml"
+      ansible.inventory_path = "ansible/inventory/hosts"
+      ansible.config_file = "ansible/ansible.cfg"
+      ansible.limit = "all"
+      ansible.compatibility_mode = "2.0"
+      ansible.install = false
+    end
 
   end
 
