@@ -7,6 +7,8 @@ Juan Meloni - Legajo: 118686
 
 Franco Perrotta - Legajo: 113970
 
+Nazarena Leonela Moreno - Legajo: 120724
+
 ## Descripción:
 > El siguiente TP tiene como finalidad recrear un equipo de trabajo. </br>
 > Se encontrarán y deberán resolver los diferentes inconvenientes que surjan en el camino.
