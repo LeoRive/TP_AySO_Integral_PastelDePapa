@@ -1,5 +1,5 @@
 # TP_AySO_Integral_PastelDePapa
-Tiara Godoy Quiroga- Legajo xxxxx
+Tiara Godoy Quiroga- Legajo 120590
 
 Leandro Rivero - Legajo: 115685
 
