@@ -1,7 +1,6 @@
 
 #!/bin/bash
 #identificar cada VM por nombre -> ambas máquinas necesitan conocer las IP de la otra
-set -e
 
 # Eliminar entradas anteriores de estas VM
 sed -i '/VM1-Grupo-Ppapa/d' /etc/hosts #Busca en /etc/hosts todas las líneas que contengan VM1-Grupo-Ppapa y las elimina
