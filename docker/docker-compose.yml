@@ -2,8 +2,14 @@ version: '3'
 
 services:
     web:
-        image: 
+        # Imagen que se corre: la del Docker Hub del LIDER (R1 - Leandro Rivero)
+        image: USUARIO_LIDER/tp-div_313_grupo_pasteldepapa:latest
+        # image: USUARIO_R2/tp-div_313_grupo_pasteldepapa:latest   # R2 - Tiara
+        # image: USUARIO_R3/tp-div_313_grupo_pasteldepapa:latest   # R3 - Nazarena
+        # image: USUARIO_R4/tp-div_313_grupo_pasteldepapa:latest   # R4 - Franco
+        # image: juanmeloni/tp-div_313_grupo_pasteldepapa:latest   # R5 - Juan
+        # image: USUARIO_R6/tp-div_313_grupo_pasteldepapa:latest   # R6 - Manuel
         ports:
-            - 
+            - "8081:80"
         volumes:
-            - 
+            - ./web/file/:/usr/share/nginx/html/file/
